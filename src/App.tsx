@@ -1,12 +1,10 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import { Provider } from "react-redux";
-import { setupStore } from "./shared/store/store";
 import { PersistGate } from "redux-persist/integration/react";
+import { persistor, store } from "./shared/store/store";
 
 const App = () => {
-  const { store, persistor } = setupStore();
-
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
