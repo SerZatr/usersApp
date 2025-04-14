@@ -16,10 +16,7 @@ export const usersApi = createApi({
   endpoints: (builder) => ({
     getUsers: builder.query<IUser[], void>({
       query: () => ({ url: "users" }),
-      async onQueryStarted(
-        _arg,
-        { dispatch, queryFulfilled, getCacheEntry, updateCachedData }
-      ) {
+      async onQueryStarted(_arg, { dispatch, queryFulfilled }) {
         try {
           dispatch(setAreUsersLoadingError(false));
           dispatch(setAreUsersLoading(true));
