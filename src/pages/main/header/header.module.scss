@@ -1,0 +1,14 @@
+@use "global.scss" as var;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr var.$sz-x3 var.$sz-x3;
+  gap: var.$sz-x2;
+  font-size: 24px;
+  align-items: center;
+  padding: var.$sz-x2 var.$sz-x4;
+}
+
+.headIcon {
+  cursor: pointer;
+}

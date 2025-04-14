@@ -1,0 +1,6 @@
+@use "global.scss" as var;
+
+.userCards {
+  overflow: auto;
+  padding: var.$sz-x2 var.$sz-x4;
+}

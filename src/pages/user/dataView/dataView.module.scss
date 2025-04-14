@@ -1,0 +1,33 @@
+@use "global.scss" as var;
+
+.dataView {
+  display: grid;
+  width: 800px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: var.$sz-x1;
+}
+
+@media (max-width: 1000px) {
+  .dataView {
+    width: 400px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.propWrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: var.$sz-x1;
+}
+
+.propName {
+  font-weight: 600;
+}
+
+.propValue {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

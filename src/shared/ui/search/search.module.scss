@@ -1,0 +1,8 @@
+@use "global.scss" as var;
+
+.search {
+  width: 100%;
+  border-radius: var.$largeBorderRadius;
+  padding: var.$sz-x1 var.$basePadding;
+  height: 100%;
+}

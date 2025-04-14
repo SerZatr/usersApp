@@ -1,0 +1,15 @@
+@use "global.scss" as var;
+
+* {
+  box-sizing: border-box;
+  color: var.$baseFont;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: var.$sz-x10 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  gap: var.$sz-x1;
+}

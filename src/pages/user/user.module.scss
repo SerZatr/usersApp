@@ -1,0 +1,15 @@
+@use "global.scss" as var;
+
+.userScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.userCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var.$sz-x4;
+}

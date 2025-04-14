@@ -1,0 +1,7 @@
+@use "global.scss" as var;
+
+.cardsList {
+    display: flex;
+    flex-direction: column;
+    gap: var.$baseGap;
+}

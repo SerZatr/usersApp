@@ -1,0 +1,8 @@
+@use "global.scss" as var;
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: var.$sz-x2;
+  padding: var.$largePadding;
+}
