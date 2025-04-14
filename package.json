@@ -13,10 +13,8 @@
     "@reduxjs/toolkit": "^2.6.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-native-web": "^0.20.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.5.0",
-    "react-virtualized": "^9.22.6",
     "redux-persist": "^6.0.0",
     "vite-plugin-dynamic-import": "^1.6.0"
   },
